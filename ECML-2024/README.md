@@ -1,1 +1,1 @@
-Files for the ECML-PKDD 2024 aeon tutorial submission
+Files for the ECML-PKDD 2024 aeon tutorial.
