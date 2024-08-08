@@ -20,7 +20,6 @@ RUN chown -R ${NB_UID} ${HOME}
 USER ${USER}
 WORKDIR ${HOME}
 
-# Install extra requirements and aeon based on master branch
+# Install aeon based on master branch
 RUN pip install --upgrade pip --no-cache-dir
-RUN pip install llvmlite --ignore-installed
-RUN pip install .[binder]
+RUN pip install -U "aeon[binder] @ git+https://github.com/aeon-toolkit/aeon.git@main"
