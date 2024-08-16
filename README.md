@@ -1,4 +1,4 @@
-# aeon-tutorial
+# aeon-tutorials
 
 An archive for resourses from tutorials and related talks given by the `aeon` community.
 
