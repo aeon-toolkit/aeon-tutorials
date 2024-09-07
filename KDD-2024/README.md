@@ -1,1 +1,1 @@
-Files for the KDD 2024 aeon tutorial submission.
+Files for the KDD 2024 aeon tutorial.
