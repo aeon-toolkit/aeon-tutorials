@@ -1,6 +1,6 @@
 # aeon-tutorials
 
-An archive for resourses from tutorials and related talks given by the `aeon` community.
+An archive for resources from tutorials and related talks given by the `aeon` community.
 
 See the [aeon-tutorials](https://github.com/aeon-tutorials) GitHub organisation for individual repositories.
 
