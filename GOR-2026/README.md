@@ -9,8 +9,7 @@ and Antoine Guillaume (Novahé).
 
 This tutorial introduces machine learning from time series with the
 [_aeon_ toolkit](https://www.aeon-toolkit.org/), an open source, _scikit-learn_ compatible
-framework for time series machine learning. It builds on the tutorials we gave at KDD 2024 and
-ECML-PKDD 2024, updated for _aeon_ 1.6.0.
+framework for time series machine learning.
 
 Questions about _aeon_ are always welcome on the [_aeon_ Discord](https://discord.gg/D6rzqHGKRJ).
 
@@ -25,7 +24,6 @@ Questions about _aeon_ are always welcome on the [_aeon_ Discord](https://discor
 | 5 | Segmentation | [part5_segmentation](Notebooks/part5_segmentation.ipynb) ([Colab](https://colab.research.google.com/github/aeon-toolkit/aeon-tutorials/blob/main/GOR-2026/Notebooks/part5_segmentation.ipynb)) | [pptx](Slides/part5_segmentation.pptx) |
 | 6 | Anomaly detection | [part6_anomaly_detection](Notebooks/part6_anomaly_detection.ipynb) ([Colab](https://colab.research.google.com/github/aeon-toolkit/aeon-tutorials/blob/main/GOR-2026/Notebooks/part6_anomaly_detection.ipynb)) | [pptx](Slides/part6_anomaly_detection.pptx), [pdf](Slides/part6_anomaly_detection.pdf) |
 | 7 | Deep learning models in _aeon_ | [part7_deep_learning_based](Notebooks/part7_deep_learning_based.ipynb) ([Colab](https://colab.research.google.com/github/aeon-toolkit/aeon-tutorials/blob/main/GOR-2026/Notebooks/part7_deep_learning_based.ipynb)) | [pdf](Slides/part7_deep_learning.pdf) |
-| 7 | Deep learning case study: rehabilitation exercise assessment (Rehab-Pile) | [part7_deep_learning_rehab_pile](Notebooks/part7_deep_learning_rehab_pile.ipynb) ([Colab](https://colab.research.google.com/github/aeon-toolkit/aeon-tutorials/blob/main/GOR-2026/Notebooks/part7_deep_learning_rehab_pile.ipynb)) | [pdf](Slides/part7_deep_learning_rehab_pile.pdf) ([LaTeX source](Slides/part7_deep_learning_rehab_pile/)) |
 | 8 | Conclusions and future directions | | [pptx](Slides/part8_conclusion.pptx) |
 
 The notebooks are stored with their outputs, so you can read them on GitHub or
