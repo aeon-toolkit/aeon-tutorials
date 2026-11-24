@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sphinx documentation
+docs/_build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data and models downloaded or written by the notebooks
+Notebooks/rehab_pile_data/
+Notebooks/models/
+*.keras
+
+# LaTeX build files
+*.aux
+*.nav
+*.snm
+*.toc
+*.vrb
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+Slides/*.log
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
+*.prefs
+.pydevproject
+.idea
+.vscode
+.spyderproject
+.spyproject
+.ropeproject
+
+# local files
+local_code/
+local/
+aeon-dev/
+local_code.py
+local.py

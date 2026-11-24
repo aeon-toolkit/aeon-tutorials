@@ -1,0 +1,85 @@
+% Minimal Beamer theme for the aeon tutorials. No external dependencies.
+
+% --- colours (from the aeon logo) -------------------------------------------
+\definecolor{aeonblue}{HTML}{0391C6}
+\definecolor{aeonorange}{HTML}{F27B1F}
+\definecolor{aeonyellow}{HTML}{FCC626}
+\definecolor{ink}{HTML}{1F2933}
+\definecolor{muted}{HTML}{6B7280}
+\definecolor{paper}{HTML}{F4F6F8}
+
+\usetheme{default}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=0.9cm, text margin right=0.9cm}
+
+\setbeamercolor{normal text}{fg=ink, bg=white}
+\setbeamercolor{structure}{fg=aeonblue}
+\setbeamercolor{title}{fg=aeonblue}
+\setbeamercolor{frametitle}{fg=ink}
+\setbeamercolor{itemize item}{fg=aeonblue}
+\setbeamercolor{itemize subitem}{fg=aeonblue}
+\setbeamercolor{enumerate item}{fg=aeonblue}
+\setbeamercolor{alerted text}{fg=aeonorange}
+
+\setbeamerfont{title}{series=\bfseries, size=\LARGE}
+\setbeamerfont{frametitle}{series=\bfseries, size=\large}
+\setbeamerfont{footline}{size=\scriptsize}
+
+\setbeamertemplate{itemize item}{\raisebox{0.18ex}{\rule{0.5ex}{0.5ex}}}
+\setbeamertemplate{itemize subitem}{--}
+\setbeamertemplate{enumerate item}{\insertenumlabel.}
+\setlength{\leftmargini}{1.1em}
+
+% --- frame title: section tag above, title below, thin rule ------------------
+\setbeamertemplate{frametitle}{%
+  \vspace{0.28cm}%
+  {\tiny\color{aeonblue}\MakeUppercase{\insertsection}\par}%
+  \vspace{0.02cm}%
+  {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle\par}%
+  \vspace{0.06cm}%
+  {\color{aeonorange}\rule{1.2cm}{1.2pt}}%
+  \vspace{-0.1cm}%
+}
+
+% --- footline ------------------------------------------------------------------
+\setbeamertemplate{footline}{%
+  \ifnum\insertframenumber>1
+  \hspace{0.9cm}{\color{muted}Deep learning for time series with \texttt{aeon} \textperiodcentered{} ADBIS 2026}%
+  \hfill{\color{muted}\insertframenumber{} / \inserttotalframenumber}\hspace{0.9cm}%
+  \vspace{0.25cm}%
+  \fi
+}
+
+% --- helpers -------------------------------------------------------------------
+% One-line message at the bottom of a slide.
+\newcommand{\takeaway}[1]{%
+  \begin{beamercolorbox}[wd=\textwidth, sep=0.18cm, rounded=true]{takeawaybox}%
+    \small #1%
+  \end{beamercolorbox}}
+\setbeamercolor{takeawaybox}{fg=ink, bg=aeonblue!10}
+
+% Source line for a reference.
+\newcommand{\source}[1]{{\par\raggedright\scriptsize\color{muted}#1\par}}
+
+% --- code ------------------------------------------------------------------------
+\lstdefinestyle{aeonpython}{
+  language=Python,
+  basicstyle=\ttfamily\scriptsize\color{ink},
+  keywordstyle=\color{aeonblue}\bfseries,
+  commentstyle=\color{muted}\itshape,
+  stringstyle=\color{aeonorange!85!black},
+  backgroundcolor=\color{paper},
+  showstringspaces=false,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{paper},
+  framesep=4pt,
+  xleftmargin=5pt,
+  xrightmargin=5pt,
+  aboveskip=0.15cm,
+  belowskip=0.15cm,
+}
+\lstset{style=aeonpython}
